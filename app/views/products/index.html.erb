@@ -1,0 +1,13 @@
+<%# views/products/index.html.erb %>
+
+<div class="flex one three-1000">
+  <% @products.each do |product| %>
+    <article class="card">
+      <img src="<%= product.picture %>">
+      <footer>
+        <h3><%= product.title %></h3>
+        <%= link_to "Deets", product_path(product), class: "button" %>
+      </footer>
+    </article>
+  <% end %>
+</div>

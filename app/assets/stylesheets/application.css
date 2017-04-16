@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+/* assets/stylesheets/application.css */
+
+.main {
+  padding-top: 100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo { 
+  width: 100%;
+}

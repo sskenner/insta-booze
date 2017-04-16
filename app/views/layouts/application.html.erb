@@ -1,14 +1,18 @@
+# views/layouts/application.html.erb
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>InstaBooze</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/picnicss/6.1.1/picnic.min.css">
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render 'layouts/navigation' %>
+  <section class="main">
+    <%= yield %>
+  </section>
 </body>
 </html>
