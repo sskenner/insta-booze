@@ -1,0 +1,6 @@
+<%# views/products/quote.js.erb %>
+
+$('#shipping-cost').html("<%= number_to_currency(@quote["fee"]) %>");
+$('#eta').html("<%= @quote["pickup_eta"] + @quote["dropoff_eta"] %> minutes");
+$('#shipping-quote').hide();
+$('#quote-info').show();
